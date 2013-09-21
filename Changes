@@ -1,0 +1,16 @@
+0.03 2013-09-21
+ - Add LICENSE file.
+ - Add SIGNATURE file.
+ - Add Test::NoWarnings to tests.
+ - Add default error type.
+ - Add dependency for perl (based on Error::Pure).
+ - Add modules to SEE ALSO section in doc.
+ - Rename CHANGES to Changes.
+ - Rewrite Changes file to CPAN::Changes::SPEC format.
+ - Update Error::Pure dependency to last version.
+
+0.02 2012-06-19
+ - Fix required modules.
+
+0.01 2012-06-19
+ - First version.

@@ -8,9 +8,12 @@ use warnings;
 use Error::Pure qw(err);
 
 # Version.
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 my %OLD_SIG;
+
+# Default error type.
+$ENV{'ERROR_PURE_TYPE'} ||= 'Die';
 
 BEGIN {
 	@OLD_SIG{qw(__DIE__)} = @SIG{qw(__DIE__)};
@@ -107,6 +110,13 @@ L<Error::Pure::AllError>,
 L<Error::Pure::Die>,
 L<Error::Pure::Error>,
 L<Error::Pure::ErrorList>,
+L<Error::Pure::HTTP::AllError>,
+L<Error::Pure::HTTP::Error>,
+L<Error::Pure::HTTP::ErrorList>,
+L<Error::Pure::HTTP::Print>,
+L<Error::Pure::HTTP::JSON>,
+L<Error::Pure::JSON>,
+L<Error::Pure::Output::JSON>,
 L<Error::Pure::Output::Text>,
 L<Error::Pure::Print>.
 
@@ -130,6 +140,6 @@ BSD license.
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
