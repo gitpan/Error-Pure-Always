@@ -8,7 +8,7 @@ use warnings;
 use Error::Pure qw(err);
 
 # Version.
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 my %OLD_SIG;
 
@@ -55,6 +55,9 @@ Error::Pure::Always - Perl module for rewrite die by err from Error::Pure module
 
  # Modules.
  use Error::Pure::Always;
+
+ # Set env error type.
+ $ENV{'ERROR_PURE_TYPE'} = 'Die';
 
  # Error.
  die '1';
@@ -140,6 +143,6 @@ BSD license.
 
 =head1 VERSION
 
-0.03
+0.04
 
 =cut
